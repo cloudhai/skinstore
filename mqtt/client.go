@@ -1,8 +1,8 @@
 package mqtt
 
 import (
-	"skinstore/src/github.com/eclipse/paho.mqtt.golang"
 	"fmt"
+	"github.com/eclipse/paho.mqtt.golang"
 )
 
 const(
