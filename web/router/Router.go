@@ -11,10 +11,11 @@ import (
 	"skinstore/Entity/wx/message"
 	"encoding/xml"
 	"skinstore/Entity/user"
+	"skinstore/common/logger"
 )
 
 type Handler func(*Params,http.ResponseWriter)(*common.WebResult)
-var log = common.NewLog()
+var log = logger.NewLog()
 var noLoginUrl = []string{"/api/wx/msg"}
 type Router struct {
 	Route map[string]map[string]Route

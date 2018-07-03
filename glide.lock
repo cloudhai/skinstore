@@ -1,5 +1,5 @@
-hash: bbfcd4f8a2d4ceb74e67ff62c5387d81cb911787e20757aae823a4751ae4dcdf
-updated: 2018-05-02T17:57:26.3275613+08:00
+hash: 1cbf79ee3ee91e23daa22c6b5d655be81be1781ab66d7d2d44c025da8ac9f25e
+updated: 2018-06-28T13:43:28.3401039+08:00
 imports:
 - name: github.com/bitly/go-simplejson
   version: da1a8928f709389522c8023062a3739f3b4af419
@@ -7,16 +7,14 @@ imports:
   version: 1952afaa557dc08e8e0d89eafab110fb501c1a2b
   subpackages:
   - memcache
-- name: github.com/ccpaging/log4go
-  version: a253cee8233e987869660c30955fd22adfbe2eda
+- name: github.com/eclipse/paho.mqtt.golang
+  version: 36d01c2b4cbeb3d2a12063e4880ce30800af9560
 - name: github.com/garyburd/redigo
   version: 569eae59ada904ea8db7a225c2b47165af08735a
   subpackages:
   - redis
 - name: github.com/golang/snappy
   version: 553a641470496b2327abcac10b36396bd98e45c9
-- name: github.com/jeanphorn/log4go
-  version: 617cc1d0be3c03ef4a409aec8c3fccea0aa36de7
 - name: github.com/mattn/go-sqlite3
   version: a72efd674f654961a11ac41aae72c0e43963fe6c
 - name: github.com/satori/go.uuid
@@ -40,4 +38,10 @@ imports:
   - leveldb/util
 - name: github.com/toolkits/file
   version: a5b3c5147e07f934d9f9d00b901a20b2529f1a57
+- name: golang.org/x/net
+  version: e514e69ffb8bc3c76a71ae40de0118d794855992
+  subpackages:
+  - internal/socks
+  - proxy
+  - websocket
 testImports: []

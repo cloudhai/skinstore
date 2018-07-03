@@ -6,9 +6,10 @@ import (
 	"sync"
 	"skinstore/utils/SqliteUtil"
 	"skinstore/common"
+	"skinstore/common/logger"
 )
 
-var log = common.NewLog()
+var log = logger.NewLog()
 type WxAccessToken struct {
 	accessToken string
 	expiresIn time.Time

@@ -2,14 +2,12 @@ package main
 
 import (
 	"fmt"
-	"reflect"
-	"time"
+	"strings"
 )
 
 func main(){
-	var t = time.Now()
-	v := reflect.ValueOf(t)
-	//k := v.Kind()
-	fmt.Println(v.Uint())
+	str := "cmd:haha"
+	fmt.Println(str[:strings.Index(str,":")])
+	fmt.Println(str[strings.Index(str,":")+1:])
 
 }

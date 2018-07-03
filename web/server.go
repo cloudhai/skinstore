@@ -5,8 +5,9 @@ import (
 	"skinstore/common"
 	"net/http"
 	"skinstore/Handler"
+	"skinstore/common/logger"
 )
-var log = common.NewLog()
+var log = logger.NewLog()
 var routers = []router.Route{}
 func InitRoute() []router.Route{
 	//test

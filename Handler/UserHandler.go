@@ -7,5 +7,5 @@ import (
 )
 
 func UserHandler(params *router.Params,rw http.ResponseWriter)*common.WebResult{
-
+	return common.NewResult(2,"")
 }

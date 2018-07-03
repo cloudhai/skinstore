@@ -5,11 +5,12 @@ import (
 	"skinstore/common"
 	"skinstore/Entity/project"
 	"strconv"
-	log2 "test01/log"
 	"skinstore/web/router"
+
+	"skinstore/common/logger"
 )
 
-var log = log2.NewLog()
+var log = logger.NewLog()
 
 func ProjectListHander(params *router.Params,rw http.ResponseWriter) *common.WebResult{
 		rowsStr := params.Get("rows")
