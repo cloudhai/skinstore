@@ -7,8 +7,8 @@ import (
 	"skinstore/web"
 	"skinstore/common/logger"
 	"skinstore/mqtt"
-	mqtt2 "skinstore/src/github.com/eclipse/paho.mqtt.golang"
 	"fmt"
+	mqtt2 "github.com/eclipse/paho.mqtt.golang"
 )
 
 var Mc *mqtt.MqttClient
