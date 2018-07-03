@@ -11,8 +11,6 @@ import (
 	mqtt2 "github.com/eclipse/paho.mqtt.golang"
 )
 
-var Mc *mqtt.MqttClient
-
 func main(){
 
 	r := &router.Router{}
@@ -23,8 +21,9 @@ func main(){
 		WriteTimeout:time.Second*5,
 		Handler:r,
 	}
-	mc := mqtt.NewMqttClient("admin","cloudhai","test")
-	mc.Subscribe(func(client mqtt2.Client, message mqtt2.Message) {
+
+	mqtt.MqttInit()
+	mqtt.Mc.Subscribe(func(client mqtt2.Client, message mqtt2.Message) {
 		fmt.Println("get msg form mqtt:"+string(message.Payload()))
 	})
 	logger.NewLog().Info("start server ...")
